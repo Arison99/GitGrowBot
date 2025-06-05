@@ -32,7 +32,7 @@ jobs:
 
       - name: Generate random follow batch size
         run: |
-          BATCH_SIZE=$(shuf -i 5-55 -n1)
+          BATCH_SIZE=$(shuf -i 555-666 -n1)
           echo "FOLLOWERS_PER_RUN=$BATCH_SIZE" >> $GITHUB_ENV
           echo "Generated FOLLOWERS_PER_RUN=$BATCH_SIZE"
 
